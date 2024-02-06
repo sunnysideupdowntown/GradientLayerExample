@@ -20,9 +20,8 @@ class ViewController: UIViewController {
         
         gradientLayer.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        gradientLayer.type = .conic
-
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradientLayer.type = .radial
     }
 }
 
