@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOC-oF-xBy">
-                                <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
+                                <rect key="frame" x="0.0" y="326" width="393" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="BOC-oF-xBy" secondAttribute="height" multiplier="1:1" id="vyi-BA-T2C"/>
+                                    <constraint firstAttribute="height" constant="200" id="NfB-xE-5f1"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-ef-NvM">
@@ -44,6 +44,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="heightConstraints" destination="NfB-xE-5f1" id="b4y-f7-JXU"/>
                         <outlet property="testView" destination="BOC-oF-xBy" id="Uuo-If-jdk"/>
                     </connections>
                 </viewController>
