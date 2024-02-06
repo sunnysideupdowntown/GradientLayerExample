@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.testView.layer.bounds
+        self.testView.layer.addSublayer(gradientLayer)
     }
 }
 
