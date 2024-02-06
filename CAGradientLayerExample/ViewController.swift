@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         self.testView.layer.addSublayer(gradientLayer)
         
         gradientLayer.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
+        gradientLayer.locations = [0.5, 0.8]
     }
 }
 
