@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.testView.layer.bounds
         self.testView.layer.addSublayer(gradientLayer)
+        
+        gradientLayer.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
     }
 }
 
