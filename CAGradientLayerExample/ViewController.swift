@@ -19,9 +19,10 @@ class ViewController: UIViewController {
         self.testView.layer.addSublayer(gradientLayer)
         
         gradientLayer.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
-        gradientLayer.locations = [0.5, 0.8]
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        gradientLayer.type = .conic
+
     }
 }
 
