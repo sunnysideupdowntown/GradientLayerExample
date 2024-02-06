@@ -23,13 +23,23 @@
                                     <constraint firstAttribute="width" secondItem="BOC-oF-xBy" secondAttribute="height" multiplier="1:1" id="vyi-BA-T2C"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-ef-NvM">
+                                <rect key="frame" x="159" y="783" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9eb-O7-qrv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bT5-ef-NvM" secondAttribute="bottom" id="3J9-GA-aWj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOC-oF-xBy" secondAttribute="trailing" id="AtO-aw-Ypj"/>
                             <constraint firstItem="BOC-oF-xBy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DSH-gR-dHB"/>
                             <constraint firstItem="BOC-oF-xBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zlb-8P-Wwl"/>
+                            <constraint firstItem="bT5-ef-NvM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWA-Fk-Jov"/>
                             <constraint firstItem="BOC-oF-xBy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uAu-kG-RGE"/>
                         </constraints>
                     </view>

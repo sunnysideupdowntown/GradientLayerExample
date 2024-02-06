@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var testView: UIView!
+    private var gradientLayer: CAGradientLayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +20,19 @@ class ViewController: UIViewController {
         self.testView.layer.addSublayer(gradientLayer)
         
         gradientLayer.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
-        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientLayer.type = .radial
+        self.gradientLayer = gradientLayer
+    }
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        
+        let animation = CABasicAnimation(keyPath: "colors")
+        animation.fromValue = [UIColor.red.cgColor, UIColor.blue.cgColor]
+        animation.toValue = [UIColor.green.cgColor, UIColor.yellow.cgColor]
+        animation.duration = 3.0
+        animation.autoreverses = true
+        animation.repeatCount = Float.infinity
+
+        self.gradientLayer?.add(animation, forKey: nil)
     }
 }
 
