@@ -13,6 +13,7 @@
 		26E68E3C2B7253A5000D50DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E68E3A2B7253A5000D50DC /* Main.storyboard */; };
 		26E68E3E2B7253A6000D50DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E68E3D2B7253A6000D50DC /* Assets.xcassets */; };
 		26E68E412B7253A6000D50DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E68E3F2B7253A6000D50DC /* LaunchScreen.storyboard */; };
+		26E68E492B726A5C000D50DC /* GradientBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E68E482B726A5C000D50DC /* GradientBGView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		26E68E3D2B7253A6000D50DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26E68E402B7253A6000D50DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26E68E422B7253A6000D50DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E68E482B726A5C000D50DC /* GradientBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBGView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				26E68E342B7253A5000D50DC /* AppDelegate.swift */,
 				26E68E362B7253A5000D50DC /* SceneDelegate.swift */,
 				26E68E382B7253A5000D50DC /* ViewController.swift */,
+				26E68E482B726A5C000D50DC /* GradientBGView.swift */,
 				26E68E3A2B7253A5000D50DC /* Main.storyboard */,
 				26E68E3D2B7253A6000D50DC /* Assets.xcassets */,
 				26E68E3F2B7253A6000D50DC /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E68E392B7253A5000D50DC /* ViewController.swift in Sources */,
+				26E68E492B726A5C000D50DC /* GradientBGView.swift in Sources */,
 				26E68E352B7253A5000D50DC /* AppDelegate.swift in Sources */,
 				26E68E372B7253A5000D50DC /* SceneDelegate.swift in Sources */,
 			);
